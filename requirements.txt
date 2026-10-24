@@ -1,0 +1,7 @@
+# Probado con Python 3.12 en Render (ver .python-version)
+gradio>=6.0,<7.0
+pandas>=2.2,<3
+numpy>=2.2,<3
+scikit-learn>=1.8,<1.9
+joblib>=1.5,<2
+firebase-admin>=7.0,<8

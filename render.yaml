@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: titanic-firebase-ia
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python entrenar_modelo.py
+    startCommand: python app.py
+    envVars:
+      - key: FIREBASE_DATABASE_URL
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT_JSON
+        sync: false
